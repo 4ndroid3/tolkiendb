@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AgregarLugarComponent } from './agregar-lugar/agregar-lugar.component';
-import { AgregarPersonaComponent } from './agregar-persona/agregar-persona.component';
+import { AgregarLugarComponent } from './home/agregar-lugar/agregar-lugar.component';
+import { AgregarPersonaComponent } from './home/agregar-persona/agregar-persona.component';
 import { HomeComponent } from './home/home.component';
 import { MostrarPersonasComponent } from './mostrar-personas/mostrar-personas.component';
 import { MostrarLugaresComponent } from './mostrar-lugares/mostrar-lugares.component';
