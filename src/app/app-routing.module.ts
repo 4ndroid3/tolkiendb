@@ -5,11 +5,12 @@ import { MostrarLugaresComponent } from './componentes/mostrar-lugares/mostrar-l
 import { MostrarPersonasComponent } from './componentes/mostrar-personas/mostrar-personas.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'mostrar-personas', component: MostrarPersonasComponent},
-  {path: 'mostrar-personas/:id', component: MostrarPersonasComponent},
-  {path: 'mostrar-lugares', component: MostrarLugaresComponent},
-  {path: 'mostrar-lugares/:id', component: MostrarLugaresComponent},  
+  { path: '', component: HomeComponent },
+  { path: 'mostrar-personas', component: MostrarPersonasComponent },
+  { path: 'mostrar-personas/:id', component: MostrarPersonasComponent },
+  { path: 'mostrar-lugares', component: MostrarLugaresComponent },
+  { path: 'mostrar-lugares/:id', component: MostrarLugaresComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
