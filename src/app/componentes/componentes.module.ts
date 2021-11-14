@@ -6,6 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { MostrarPersonasComponent } from './mostrar-personas/mostrar-personas.component';
 import { MostrarLugaresComponent } from './mostrar-lugares/mostrar-lugares.component';
 import { SharedModule } from '../shared/shared.module';
+import { PersonaComponent } from './mostrar-personas/persona/persona.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -15,17 +17,20 @@ import { SharedModule } from '../shared/shared.module';
     AgregarPersonaComponent,
     HomeComponent,
     MostrarPersonasComponent,
-    MostrarLugaresComponent
+    MostrarLugaresComponent,
+    PersonaComponent,
   ],
   imports: [
-    CommonModule, SharedModule
+    CommonModule, SharedModule,
+    ReactiveFormsModule,
   ],
   exports: [
     AgregarLugarComponent,
     AgregarPersonaComponent,
     HomeComponent,
     MostrarPersonasComponent,
-    MostrarLugaresComponent
+    MostrarLugaresComponent,
+    PersonaComponent,
   ]
 })
 export class ComponentesModule { }

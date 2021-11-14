@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-agregar-lugar',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AgregarLugarComponent implements OnInit {
 
-  constructor() { }
+  createLugar: FormGroup;
+
+  constructor(private fb: FormBuilder) { 
+    this.createLugar = this.fb.group({
+      nombre: ['', Validators.required],
+      raza: [''],
+      clan: [''],
+      descripcion: [''],
+    })
+  }
 
   ngOnInit() {
+  }
+
+  agregarLugar() {
+    console.log(this.createLugar)
   }
 
 }

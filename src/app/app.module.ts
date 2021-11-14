@@ -9,6 +9,7 @@ import { HttpService } from './shared/services/http.service';
 import { SharedModule } from './shared/shared.module';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     ComponentesModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
+    ReactiveFormsModule,
   ],
   providers: [HttpService,],
   bootstrap: [AppComponent,]

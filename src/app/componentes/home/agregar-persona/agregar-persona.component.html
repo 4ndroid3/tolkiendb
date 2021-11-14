@@ -1,3 +1,11 @@
-<p>
-  agregar-persona works!
-</p>
+<h1 class="title is-4">Agregar Personaje</h1>
+<h1 class="subtitle is-5">Agregar un personaje de la saga con sus principales caracteristicas</h1>
+<form [formGroup]="createPersona" (ngSubmit)="agregarPersona()">
+  <input type="text" formControlName="nombre" placeholder="Nombre">
+  <input type="text" formControlName="raza" placeholder="Raza">
+  <input type="text" formControlName="clan" placeholder="Clan">
+  <input type="text" formControlName="edad_nacimiento"placeholder="Edad de Nacimiento">
+  <input type="text" formControlName="edad_muerte" placeholder="Edad de Muerte">
+  <input type="text" formControlName="descripcion" placeholder="Descripción">
+  <button type="submit" [disabled]="!createPersona.valid">Guardar</button>
+</form>
